@@ -25,6 +25,8 @@ System Preferences > Keyboard > Shortcuts > App Shortcuts > +
 ```
 Close Tab => Control-W
 New Tab => Control-T
+Copy => Control-C
+Paste => Control-P
 ```
 
 ### Mission Control (Workspace Switching)
@@ -35,14 +37,6 @@ System Preferences > Keyboard > Shortcuts > Mission Control
 Move left a space => Control-Command-Left Arrow
 Move right a space => Control-Command-Right Arrow
 ```
-
-
-## Rectangle (Window Tiling) 
-
-```
-brew install --cask rectangle
-```
-
 
 ## Shortcuts for Opening Applications
 
@@ -80,5 +74,20 @@ Details icon (top right) > Run With
 Remember to blur the input box in order for the shortcut to save.
 
 
+## Installations
 
+### Rectangle (Window Tiling) 
+- Remap tile-left, tile right, tile right-top ... etc
+
+```
+brew install --cask rectangle
+```
+
+### Jumpcut (Optional)
+
+- Tracks clipboard history
+
+```
+brew install --cask jumpcut
+```
 
