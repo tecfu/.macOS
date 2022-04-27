@@ -91,3 +91,9 @@ brew install --cask rectangle
 brew install --cask jumpcut
 ```
 
+
+### Browser Extensions
+
+
+- Vimium
+- Duplicate Tab: https://github.com/stefansundin/duplicate-tab
