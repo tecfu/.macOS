@@ -91,6 +91,13 @@ brew install --cask rectangle
 brew install --cask jumpcut
 ```
 
+### Alt-Tab
+- Use <alt-tab> to cycle windows, whereas mac native cycles by applications
+```
+brew install --cask alt-tab
+```
+Then change keybinding to <alt-tab>
+
 
 ### Browser Extensions
 
