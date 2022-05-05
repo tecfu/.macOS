@@ -1,7 +1,7 @@
-# macOS Configuration 
+# macOS Setup
 
 
-## Keyboard Shortcuts
+## Configuration
 
 ### Change Modifier Keys
 
@@ -72,6 +72,18 @@ Then set the keyboard shortcut.
 Details icon (top right) > Run With
 ```
 Remember to blur the input box in order for the shortcut to save.
+
+
+### Slack
+
+Make sure Slack notifications are on
+System Preferences > Sounds and Notifications > Slack > Enable
+
+
+### Git
+
+- Git autocomplete in terminal
+https://www.macinstruct.com/tutorials/how-to-enable-git-tab-autocomplete-on-your-mac/
 
 
 ## Installations
