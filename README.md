@@ -111,6 +111,12 @@ brew install --cask alt-tab
 Then change keybinding to <alt-tab>
 
 
+### Tree
+```
+brew install tree
+```
+
+
 ### Browser Extensions
 
 
