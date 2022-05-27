@@ -74,6 +74,24 @@ Details icon (top right) > Run With
 Remember to blur the input box in order for the shortcut to save.
 
 
+## Applications
+
+> A note on homebrew installations:
+ 
+ If you are getting a SHA-256 mismatch:
+
+ - Remove downloaded .gz / .zip file from cache directory
+ ```
+ brew --cache packagename
+ ```
+ - Download matching release from githuub
+ - Overwrite downloaded file from github to cache using `mv`
+ - Install via
+ ```
+ brew upgrade packagename
+ ```
+
+
 ### Slack
 
 Make sure Slack notifications are on
@@ -108,7 +126,12 @@ brew install --cask jumpcut
 ```
 brew install --cask alt-tab
 ```
-Then change keybinding to <alt-tab>
+
+*Preferences*
+
+- Keybinding: `<alt-tab>`
+- Minimized Windows: Hide
+- Hidden Windows: Hide
 
 
 ### Tree
