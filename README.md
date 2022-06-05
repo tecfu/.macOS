@@ -106,6 +106,28 @@ https://www.macinstruct.com/tutorials/how-to-enable-git-tab-autocomplete-on-your
 
 ## Installations
 
+### Vim 
+
+1.
+```
+brew edit vim
+```
+
+2.
+```
+system "./configure", "--prefix=#{HOMEBREW_PREFIX}",
+                      "--mandir=#{man}",
+                      "--enable-multibyte",
+                      "--with-features=huge",
+```
+
+3.
+```
+brew install --build-from-source vim
+brew link vim
+```
+
+
 ### Rectangle (Window Tiling) 
 - Remap tile-left, tile right, tile right-top ... etc
 
