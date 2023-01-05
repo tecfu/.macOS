@@ -9,10 +9,10 @@ System Preferences > Keyboard > Modifier Keys
 
 ```
 Caps Lock => Escape
-Control => fn
+Control => fn/Globe
 Option => Option
 Command => Command
-fn => Control
+fn/Globe => Control
 ```
 
 
@@ -23,12 +23,11 @@ System Preferences > Keyboard > Shortcuts > App Shortcuts > +
 
 - All applications
 ```
-Close Tab => Control-W
-New Tab => Control-T
-Copy => Control-C
-Paste => Control-P
-```
-
+Close Tab => Control-w
+New Tab => Control-t
+Copy => Control-c
+Paste => Control-v
+``
 ### Mission Control (Workspace Switching)
 
 System Preferences > Keyboard > Shortcuts > Mission Control
