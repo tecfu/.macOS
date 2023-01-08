@@ -27,7 +27,7 @@ Close Tab => Control-w
 New Tab => Control-t
 Copy => Control-c
 Paste => Control-v
-``
+````
 ### Mission Control (Workspace Switching)
 
 System Preferences > Keyboard > Shortcuts > Mission Control
