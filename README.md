@@ -39,39 +39,17 @@ Move right a space => Control-Command-Right Arrow
 
 ## Shortcuts for Opening Applications
 
-
-- Setup various applications to open on keyboard shortcut
-
-```
-Launchpad > Shortcuts > File > New Shortcut
-Open Application
-Type Name of Application
-Details icon (top right) > Run With
-```
-Remember to blur the input box in order for the shortcut to save.
-
-
-- Setup terminal to open in new window on keyboard shortcut
-
-```
-Launchpad > Shortcuts > File > New Shortcut
-Enter Shortcut Name
-Apps > Terminal > Run Shell Script
-```
-
-Then for the shell script enter:
-
-```
-open -a Terminal ~/Documents
-```
-
-Then set the keyboard shortcut. 
-
-```
-Details icon (top right) > Run With
-```
-Remember to blur the input box in order for the shortcut to save.
-
+Create an `Automator` service
+  - Launchpad > Automator > File > New > Quick Action
+  - Change `Workflow receives current` dropdown to `no input`
+  - Drag `Run Shell Script` to workflow box
+  - Change `Shell` dropdown to `/bin/bash`
+  - Enter the following command in text area
+      ```
+      open -a Terminal ~/Documents/Github
+      ```
+  - Save the quick action with a yourActonName
+  - Set the keyboard shortcut: System Preferences > Keyboard > Shortcuts > Services > General > yourActonName
 
 ## Applications
 
