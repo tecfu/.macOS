@@ -142,5 +142,6 @@ brew install tree
 ### Browser Extensions
 
 
-- Vimium
+- vimium-c https://github.com/gdh1995/vimium-c
+    - Better scrolling of modals out-of-the-box (vimium fails at this)
 - Duplicate Tab: https://github.com/stefansundin/duplicate-tab
