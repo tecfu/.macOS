@@ -37,19 +37,23 @@ Move left a space => Control-Command-Left Arrow
 Move right a space => Control-Command-Right Arrow
 ```
 
-## Shortcuts for Opening Applications
+
+## Shortcut for Opening a New Terminal on Current Desktop
 
 Create an `Automator` service
   - Launchpad > Automator > File > New > Quick Action
   - Change `Workflow receives current` dropdown to `no input`
-  - Drag `Run Shell Script` to workflow box
-  - Change `Shell` dropdown to `/bin/bash`
+  - Drag `Run AppleScript` to workflow box
   - Enter the following command in text area
       ```
-      open -a Terminal ~/Documents/Github
+      tell application "Terminal"
+        do script ""
+        activate
+      end tell
       ```
-  - Save the quick action with a yourActonName
-  - Set the keyboard shortcut: System Preferences > Keyboard > Shortcuts > Services > General > yourActonName
+  - Save the quick action: File > Save (with name like  AutomatorActionName)
+  - Set the keyboard shortcut: System Preferences > Keyboard > Shortcuts > Services > General > AutomatorActionName
+
 
 ## Applications
 
