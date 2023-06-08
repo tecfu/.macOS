@@ -6,7 +6,7 @@
 
 System Preferences > Keyboard > Modifier Keys
 
-```
+```sequence
 Caps Lock => Escape
 Control => fn/Globe
 Option => Option
@@ -20,7 +20,7 @@ System Preferences > Keyboard > Shortcuts > App Shortcuts > +
 
 - All applications
 
-```
+```sequence
 Close Tab => Control-w
 Copy => Control-c
 Paste => Control-v
@@ -28,7 +28,7 @@ Paste => Control-v
 
 - Google Chrome / Other Browswers
 
-```
+```sequence
 New Tab => Control-t
 ```
 
@@ -36,7 +36,7 @@ New Tab => Control-t
 
 System Preferences > Keyboard > Shortcuts > Mission Control
 
-```
+```sequence
 Move left a space => Control-Command-Left Arrow
 Move right a space => Control-Command-Right Arrow
 ```
@@ -66,7 +66,7 @@ If you are getting a SHA-256 mismatch:
 
 - Remove downloaded .gz / .zip file from cache directory
 
-```
+```sequence
 brew --cache packagename
 ```
 
@@ -74,7 +74,7 @@ brew --cache packagename
 - Overwrite downloaded file from github to cache using `mv`
 - Install via
 
-```
+```sequence
 brew upgrade packagename
 ```
 
@@ -94,13 +94,13 @@ System Preferences > Sounds and Notifications > Slack > Enable
 
 1.
 
-```
+```sequence
 brew edit vim
 ```
 
 2.
 
-```
+```sequence
 system "./configure", "--prefix=#{HOMEBREW_PREFIX}",
                       "--mandir=#{man}",
                       "--enable-multibyte",
@@ -109,7 +109,7 @@ system "./configure", "--prefix=#{HOMEBREW_PREFIX}",
 
 3.
 
-```
+```sequence
 brew install --build-from-source vim
 brew link vim
 ```
@@ -118,7 +118,7 @@ brew link vim
 
 - Remap tile-left, tile right, tile right-top ... etc
 
-```
+```sequence
 brew install --cask rectangle
 ```
 
@@ -126,7 +126,7 @@ brew install --cask rectangle
 
 - Tracks clipboard history
 
-```
+```sequence
 brew install --cask jumpcut
 ```
 
@@ -134,7 +134,7 @@ brew install --cask jumpcut
 
 - Use <alt-tab> to cycle windows, whereas mac native cycles by applications
 
-```
+```sequence
 brew install --cask alt-tab
 ```
 
@@ -146,7 +146,7 @@ _Preferences_
 
 ### Tree
 
-```
+```sequence
 brew install tree
 ```
 
