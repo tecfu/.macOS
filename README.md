@@ -47,14 +47,28 @@ Create an `Automator` service
 
 - Launchpad > Automator > File > New > Quick Action
 - Change `Workflow receives current` dropdown to `no input`
+
+_alacritty_
+
+- Drag `Run Shell Script` to workflow box
+- Enter the following command in text area
+
+  ```
+  /usr/local/bin/alacritty </dev/null &>/dev/null &
+  ```
+
+_default terminal_
+
 - Drag `Run AppleScript` to workflow box
 - Enter the following command in text area
+
   ```
   tell application "Terminal"
     do script ""
     activate
   end tell
   ```
+
 - Save the quick action: File > Save (with name like AutomatorActionName)
 - Set the keyboard shortcut: System Preferences > Keyboard > Shortcuts > Services > General > AutomatorActionName
 
