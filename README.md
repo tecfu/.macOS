@@ -43,6 +43,12 @@ Move right a space => Control-Command-Right Arrow
 
 ## Shortcut for Opening a New Terminal on Current Desktop
 
+### If You CAN Use Karibiber Elements
+
+Copy the rule "Trigger Alacritty with CTRL-COMMAND-T" from the karabiner.json file in this repo
+or simply copy/symlink the entire file into ~/.config/karabiner/karabiner.json
+
+### If Can't Use Karibiner Elements
 Create an `Automator` service
 
 - Launchpad > Automator > File > New > Quick Action
