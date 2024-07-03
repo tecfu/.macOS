@@ -34,7 +34,11 @@ New Tab => Control-t
 
 ### Mission Control (Workspace Switching)
 
-System Preferences > Keyboard > Shortcuts > Mission Control
+- Add workspaces
+    - Applications > Mission Control > Plus Icon
+
+- Add shortcuts to move between workspaces
+    - System Preferences > Keyboard > Shortcuts > Mission Control
 
 ```sequence
 Move left a space => Control-Command-Left Arrow
@@ -43,13 +47,7 @@ Move right a space => Control-Command-Right Arrow
 
 ## Shortcut for Opening a New Terminal on Current Desktop
 
-### If You CAN Use Karibiber Elements
-
-Copy the rule "Trigger Alacritty with CTRL-COMMAND-T" from the karabiner.json file in this repo
-or simply copy/symlink the entire file into ~/.config/karabiner/karabiner.json
-
-### If Can't Use Karibiner Elements
-Create an `Automator` service
+- Create an `Automator` service
 
 - Launchpad > Automator > File > New > Quick Action
 - Change `Workflow receives current` dropdown to `no input`
@@ -57,11 +55,24 @@ Create an `Automator` service
 _alacritty_
 
 - Drag `Run Shell Script` to workflow box
-- Enter the following command in text area
+- Get the path to Alacritty and enter it in text area
+  ```
+  which alacritty
+  ```
 
   ```
   /usr/local/bin/alacritty </dev/null &>/dev/null &
   ```
+
+  Then be sure to add a matching keybinding to .alacritty.toml, because this will not open a new window if alacritty is already focused
+
+.alacritty.toml
+```
+[[keyboard.bindings]]
+action = 'SpawnNewInstance'
+key = 'T'
+mods = 'Control|Command'
+```
 
 _default terminal_
 
@@ -98,6 +109,12 @@ brew --cache packagename
 brew upgrade packagename
 ```
 
+### Chrome
+
+- Settings
+    - Make Chrome default browser
+    - Make Chrome open tabs "where last left off"
+
 ### Slack
 
 Make sure Slack notifications are on
@@ -109,6 +126,15 @@ System Preferences > Sounds and Notifications > Slack > Enable
   https://www.macinstruct.com/tutorials/how-to-enable-git-tab-autocomplete-on-your-mac/
 
 ## Installations
+
+### VSCode
+
+#### After Install
+
+- Use the Uninstall 'code' command in the PATH command before the "Install 'code' command in PATH" command.
+
+- Download and install config from https://github.com/tecfu/vscode-config
+
 
 ### Vim
 
